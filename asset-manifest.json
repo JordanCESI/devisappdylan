@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/devisappdylan/static/css/main.1ea82c39.css",
-    "main.js": "/devisappdylan/static/js/main.875e488c.js",
+    "main.css": "/devisappdylan/static/css/main.acb8965f.css",
+    "main.js": "/devisappdylan/static/js/main.84713fb7.js",
     "static/js/453.743c0b64.chunk.js": "/devisappdylan/static/js/453.743c0b64.chunk.js",
-    "static/media/logo.svg": "/devisappdylan/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/devisappdylan/index.html",
-    "main.1ea82c39.css.map": "/devisappdylan/static/css/main.1ea82c39.css.map",
-    "main.875e488c.js.map": "/devisappdylan/static/js/main.875e488c.js.map",
+    "main.acb8965f.css.map": "/devisappdylan/static/css/main.acb8965f.css.map",
+    "main.84713fb7.js.map": "/devisappdylan/static/js/main.84713fb7.js.map",
     "453.743c0b64.chunk.js.map": "/devisappdylan/static/js/453.743c0b64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ea82c39.css",
-    "static/js/main.875e488c.js"
+    "static/css/main.acb8965f.css",
+    "static/js/main.84713fb7.js"
   ]
 }
