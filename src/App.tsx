@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
 import { Outlet } from 'react-router-dom';
+import { FormProvider } from './context/FormContext';
 
 function App() {
    return (
     <>
-      <Outlet/>
+     <FormProvider>
+        <Outlet/>
+     </FormProvider>
     </>
   );
 }
