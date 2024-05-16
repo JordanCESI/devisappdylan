@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/devisappdylan/static/css/main.3b678a1d.css",
-    "main.js": "/devisappdylan/static/js/main.1b61ed4c.js",
+    "main.css": "/devisappdylan/static/css/main.bc8ce01f.css",
+    "main.js": "/devisappdylan/static/js/main.4bf08ea7.js",
     "static/js/453.743c0b64.chunk.js": "/devisappdylan/static/js/453.743c0b64.chunk.js",
     "index.html": "/devisappdylan/index.html",
-    "main.3b678a1d.css.map": "/devisappdylan/static/css/main.3b678a1d.css.map",
-    "main.1b61ed4c.js.map": "/devisappdylan/static/js/main.1b61ed4c.js.map",
+    "main.bc8ce01f.css.map": "/devisappdylan/static/css/main.bc8ce01f.css.map",
+    "main.4bf08ea7.js.map": "/devisappdylan/static/js/main.4bf08ea7.js.map",
     "453.743c0b64.chunk.js.map": "/devisappdylan/static/js/453.743c0b64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b678a1d.css",
-    "static/js/main.1b61ed4c.js"
+    "static/css/main.bc8ce01f.css",
+    "static/js/main.4bf08ea7.js"
   ]
 }
