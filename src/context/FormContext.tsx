@@ -1,13 +1,25 @@
 import React, { createContext, useContext, useState, ReactNode, Dispatch, SetStateAction } from 'react';
 
+export interface IWindowDetails {
+    length: string;
+    width: string;
+}
+
+export interface IDoorDetails {
+    height: string;
+    width: string;
+}
+
+
 export interface IPignon {
     hauteurPignon: string;
     hauteurMur: string;
     longueurMur: string;
-    nbFenetres: string;
     nbPortes: string;
     nbPointsLumineux: string;
     nbVentilation: string;
+    fenetres: IWindowDetails[];
+    portes: IDoorDetails[]; // Add this line for door details
 }
 
 export interface IClient {
@@ -29,34 +41,30 @@ export interface IFormContext {
     formState: IFormState;
     setFormState: Dispatch<SetStateAction<IFormState>>;
     addPignon: (pignon: IPignon) => void;
-    removePignon: (index: number) => void; // Déclaration ajoutée
+    removePignon: (index: number) => void;
 }
-
-const defaultState: IFormState = {
-    pignons: [],
-    client: {
-        nom: '',
-        prenom: '',
-        adresse: '',
-        codePostal: '',
-        ville: '',
-        telephone: '',
-        email: ''
-    }
-};
 
 const FormContext = createContext<IFormContext | undefined>(undefined);
 
 export const useFormContext = () => {
     const context = useContext(FormContext);
-    if (!context) {
-        throw new Error('useFormContext must be used within a FormProvider');
-    }
+    if (!context) throw new Error('useFormContext must be used within a FormProvider');
     return context;
 };
 
-export const FormProvider: React.FC<{children: ReactNode}> = ({ children }) => {
-    const [formState, setFormState] = useState<IFormState>(defaultState);
+export const FormProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+    const [formState, setFormState] = useState<IFormState>({
+        pignons: [],
+        client: {
+            nom: '',
+            prenom: '',
+            adresse: '',
+            codePostal: '',
+            ville: '',
+            telephone: '',
+            email: ''
+        }
+    });
 
     const addPignon = (pignon: IPignon) => {
         setFormState(prevState => ({

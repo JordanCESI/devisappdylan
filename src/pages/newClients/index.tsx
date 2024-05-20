@@ -19,7 +19,7 @@ const NewClient: React.FC = () => {
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
-        navigate("/devisappdylan/mesure"); // Navigate to the client details page
+        navigate("/devisappdylan/mesure"); // Ensure this is the correct route
     };
 
     return (
